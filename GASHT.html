@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreWorld | Modern Travel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800 font-sans">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-2xl font-bold text-blue-600">Explore<span class="text-blue-900">World</span></div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                    <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                    <a href="#gallery" class="hover:text-blue-600 transition">Gallery</a>
+                    <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative h-screen flex items-center justify-center bg-blue-900 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80" alt="Hero" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">Adventure Awaits</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto font-light">Discover hidden gems and breathtaking landscapes with our premium travel guides.</p>
+            <a href="#services" class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold text-lg hover:bg-blue-50 transition shadow-lg">Start Exploring</a>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-blue-900">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition bg-slate-50">
+                    <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Custom Itineraries</h3>
+                    <p class="text-gray-600">Personalized travel plans designed specifically for your interests and budget.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition bg-slate-50">
+                    <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-hotel"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Luxury Stays</h3>
+                    <p class="text-gray-600">Exclusive access to the world's most beautiful resorts and boutique hotels.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition bg-slate-50">
+                    <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-plane"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Easy Booking</h3>
+                    <p class="text-gray-600">Stress-free flight and transport arrangements at the best competitive rates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-slate-50 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-blue-900">Visual Journey</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img class="h-64 w-full object-cover rounded-xl shadow-md hover:scale-105 transition duration-300" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="Beach">
+                <img class="h-64 w-full object-cover rounded-xl shadow-md hover:scale-105 transition duration-300" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=500&q=80" alt="Mountain">
+                <img class="h-64 w-full object-cover rounded-xl shadow-md hover:scale-105 transition duration-300" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=500&q=80" alt="Paris">
+                <img class="h-64 w-full object-cover rounded-xl shadow-md hover:scale-105 transition duration-300" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=500&q=80" alt="Greece">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-4 bg-white">
+        <div class="max-w-3xl mx-auto bg-blue-600 rounded-3xl p-8 md:p-12 text-white shadow-2xl">
+            <h2 class="text-3xl font-bold mb-6 text-center">Get In Touch</h2>
+            <form class="space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full p-4 rounded-xl text-gray-800 outline-none">
+                <input type="email" placeholder="Your Email" class="w-full p-4 rounded-xl text-gray-800 outline-none">
+                <textarea placeholder="Your Message" rows="4" class="w-full p-4 rounded-xl text-gray-800 outline-none"></textarea>
+                <button class="w-full bg-blue-900 hover:bg-black py-4 rounded-xl font-bold transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center border-t border-gray-100">
+        <p class="text-gray-500">&copy; 2024 ExploreWorld. Built with ❤️ for adventurers.</p>
+    </footer>
+
+</body>
+</html>
