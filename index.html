@@ -1,91 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ku" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExploreWorld | Modern Travel</title>
+    <title>گەشتوگوزاری جیهان | ExploreWorld</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;400;700&display=swap" rel="stylesheet">
     <style>
+        body { font-family: 'Vazirmatn', sans-serif; }
         html { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="bg-slate-50 text-gray-800 font-sans">
+<body class="bg-slate-50 text-gray-800">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="text-2xl font-bold text-blue-600">Explore<span class="text-blue-900">World</span></div>
-                <div class="hidden md:flex space-x-8 font-medium">
-                    <a href="#home" class="hover:text-blue-600 transition">Home</a>
-                    <a href="#services" class="hover:text-blue-600 transition">Services</a>
-                    <a href="#gallery" class="hover:text-blue-600 transition">Gallery</a>
-                    <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Contact</a>
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between h-20 items-center">
+                <div class="text-2xl font-bold text-blue-600 italic">Explore<span class="text-blue-900">World</span></div>
+                <div class="hidden md:flex space-x-reverse space-x-8 font-medium">
+                    <a href="#home" class="hover:text-blue-600 transition">سەرەتا</a>
+                    <a href="#services" class="hover:text-blue-600 transition">خزمەتگوزارییەکان</a>
+                    <a href="#gallery" class="hover:text-blue-600 transition">گالەری</a>
+                    <a href="#contact" class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">پەیوەندی</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="relative h-screen flex items-center justify-center bg-blue-900 text-white overflow-hidden">
-        <div class="absolute inset-0 opacity-40">
+    <section id="home" class="relative h-screen flex items-center justify-center bg-blue-900 text-white">
+        <div class="absolute inset-0 opacity-50">
             <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80" alt="Hero" class="w-full h-full object-cover">
         </div>
         <div class="relative z-10 text-center px-4">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">Adventure Awaits</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto font-light">Discover hidden gems and breathtaking landscapes with our premium travel guides.</p>
-            <a href="#services" class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold text-lg hover:bg-blue-50 transition shadow-lg">Start Exploring</a>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">جیهان لەگەڵ ئێمە ببینە</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto font-light leading-relaxed text-blue-50">جوانترین شوێنە گەشتیارییەکان و وڵاتانی جیهان بە کوالێتیەکی بەرز و نرخێکی گونجاو بەسەر بکەرەوە.</p>
+            <a href="#services" class="bg-white text-blue-900 px-10 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all inline-block">دەستپێبکە</a>
         </div>
     </section>
 
-    <section id="services" class="py-20 px-4 bg-white">
+    <section id="services" class="py-24 px-4 bg-white">
         <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-blue-900">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition bg-slate-50">
-                    <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-map-marked-alt"></i></div>
-                    <h3 class="text-xl font-bold mb-2">Custom Itineraries</h3>
-                    <p class="text-gray-600">Personalized travel plans designed specifically for your interests and budget.</p>
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-blue-900 underline decoration-blue-200 underline-offset-8">خزمەتگوزارییەکانمان</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="p-10 border border-gray-100 rounded-3xl hover:border-blue-200 transition bg-slate-50">
+                    <div class="text-5xl text-blue-600 mb-6"><i class="fas fa-route"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">پلانی گەشت</h3>
+                    <p class="text-gray-600 leading-relaxed">ئێمە وردترین پلانی گەشتت بۆ دادەنێین کە لەگەڵ ئارەزووەکانت بگونجێت.</p>
                 </div>
-                <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition bg-slate-50">
-                    <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-hotel"></i></div>
-                    <h3 class="text-xl font-bold mb-2">Luxury Stays</h3>
-                    <p class="text-gray-600">Exclusive access to the world's most beautiful resorts and boutique hotels.</p>
+                <div class="p-10 border border-gray-100 rounded-3xl hover:border-blue-200 transition bg-slate-50">
+                    <div class="text-5xl text-blue-600 mb-6"><i class="fas fa-bed"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">باشترین هۆتێلەکان</h3>
+                    <p class="text-gray-600 leading-relaxed">مانەوە لە لوکسترین و ئارامترین هۆتێلەکانی جیهان بە داشکاندنی تایبەت.</p>
                 </div>
-                <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition bg-slate-50">
-                    <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-plane"></i></div>
-                    <h3 class="text-xl font-bold mb-2">Easy Booking</h3>
-                    <p class="text-gray-600">Stress-free flight and transport arrangements at the best competitive rates.</p>
+                <div class="p-10 border border-gray-100 rounded-3xl hover:border-blue-200 transition bg-slate-50">
+                    <div class="text-5xl text-blue-600 mb-6"><i class="fas fa-ticket-alt"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">بڕینی بلیت</h3>
+                    <p class="text-gray-600 leading-relaxed">خێراترین خزمەتگوزاری بڕینی بلیتی فڕۆکە و ڤیزا بە کەمترین کات.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="gallery" class="py-20 bg-slate-50 px-4">
+    <section id="gallery" class="py-24 bg-slate-50 px-4">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-blue-900">Visual Journey</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <img class="h-64 w-full object-cover rounded-xl shadow-md hover:scale-105 transition duration-300" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="Beach">
-                <img class="h-64 w-full object-cover rounded-xl shadow-md hover:scale-105 transition duration-300" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=500&q=80" alt="Mountain">
-                <img class="h-64 w-full object-cover rounded-xl shadow-md hover:scale-105 transition duration-300" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=500&q=80" alt="Paris">
-                <img class="h-64 w-full object-cover rounded-xl shadow-md hover:scale-105 transition duration-300" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=500&q=80" alt="Greece">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center text-blue-900 italic">هەندێک لە کارەکانمان</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <img class="h-80 w-full object-cover rounded-3xl shadow-lg hover:brightness-75 transition" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="Beach">
+                <img class="h-80 w-full object-cover rounded-3xl shadow-lg hover:brightness-75 transition" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=500&q=80" alt="Mountain">
+                <img class="h-80 w-full object-cover rounded-3xl shadow-lg hover:brightness-75 transition" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=500&q=80" alt="Paris">
+                <img class="h-80 w-full object-cover rounded-3xl shadow-lg hover:brightness-75 transition" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=500&q=80" alt="Greece">
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 px-4 bg-white">
-        <div class="max-w-3xl mx-auto bg-blue-600 rounded-3xl p-8 md:p-12 text-white shadow-2xl">
-            <h2 class="text-3xl font-bold mb-6 text-center">Get In Touch</h2>
-            <form class="space-y-4">
-                <input type="text" placeholder="Your Name" class="w-full p-4 rounded-xl text-gray-800 outline-none">
-                <input type="email" placeholder="Your Email" class="w-full p-4 rounded-xl text-gray-800 outline-none">
-                <textarea placeholder="Your Message" rows="4" class="w-full p-4 rounded-xl text-gray-800 outline-none"></textarea>
-                <button class="w-full bg-blue-900 hover:bg-black py-4 rounded-xl font-bold transition">Send Message</button>
-            </form>
+    <section id="contact" class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div class="space-y-8">
+                <h2 class="text-4xl font-bold text-blue-900 mb-8">دەربارەی من</h2>
+                <p class="text-lg text-gray-600 leading-relaxed italic">من گەشتیار و ڕاوێژکارێکم، ئامانجم ئەوەیە یارمەتیت بدەم باشترین کاتەکانت لە گەشتەکانتدا بەسەر بەریت.</p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-reverse space-x-4">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl shadow-sm"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <p class="text-sm text-gray-400">ژمارەی مۆبایل</p>
+                            <p class="text-lg font-bold">0750 000 0000</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-reverse space-x-4">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl shadow-sm"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <p class="text-sm text-gray-400">ئیمێڵ</p>
+                            <p class="text-lg font-bold">yourname@example.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-reverse space-x-4">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl shadow-sm"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <p class="text-sm text-gray-400">ناونیشان</p>
+                            <p class="text-lg font-bold">هەرێمی کوردستان، هەولێر</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex space-x-reverse space-x-4 pt-6">
+                    <a href="#" class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-2xl hover:bg-blue-800 transition shadow-md"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-12 h-12 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 text-white rounded-xl flex items-center justify-center text-2xl hover:opacity-90 transition shadow-md"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-12 h-12 bg-sky-400 text-white rounded-xl flex items-center justify-center text-2xl hover:bg-sky-500 transition shadow-md"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="bg-blue-900 p-8 md:p-12 rounded-3xl shadow-2xl text-white">
+                <h3 class="text-2xl font-bold mb-8">نامەم بۆ بنێرە</h3>
+                <form class="space-y-5">
+                    <input type="text" placeholder="ناوەکەت" class="w-full p-4 rounded-xl text-gray-800 focus:ring-4 ring-blue-400 transition outline-none">
+                    <input type="email" placeholder="ئیمێڵەکەت" class="w-full p-4 rounded-xl text-gray-800 focus:ring-4 ring-blue-400 transition outline-none">
+                    <textarea placeholder="نامەکەت بنووسە..." rows="4" class="w-full p-4 rounded-xl text-gray-800 focus:ring-4 ring-blue-400 transition outline-none"></textarea>
+                    <button class="w-full bg-white text-blue-900 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition shadow-lg">ناردنی نامە</button>
+                </form>
+            </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center border-t border-gray-100">
-        <p class="text-gray-500">&copy; 2024 ExploreWorld. Built with ❤️ for adventurers.</p>
+    <footer class="py-12 text-center border-t border-gray-100 bg-slate-50">
+        <div class="text-xl font-bold text-blue-900 mb-4">ExploreWorld</div>
+        <p class="text-gray-500">هەموو مافەکان پارێزراوە بۆ گەشتیاری جیهان &copy; 2024</p>
     </footer>
 
 </body>
